@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0">
+    <link rel="stylesheet" href="calculadora.css" type="text/css">
+
+    <title>Teste GitHub Desktop</title>
+</head>
+<body>
+
+
+<table border="1"class="table" width="500">
+    <tr>
+        <td class="td" width="120">Nome aopa</td>
+        <td class="td" width="160">Valor bruto</td>
+        <td class="td" width="130">Máx parcelas</td>
+    </tr>
+    <tr>
+        <td><img src="https://p2.trrsf.com/image/fget/cf/648/0/images.terra.com/2020/06/02/volkswagen-t-cross-brasil-14.jpg" class="imagem"></td>
+        <td class="td">R$ 100.000,00</td>
+        <td class="td">60 meses</td>
+    </tr>
+    <tr>
+      <td><img src="https://image1.mobiauto.com.br/images/api/images/v1.0/70965062/transform/" class="imagem"></td>
+      <td class="td">R$ 78.000,00</td>
+        <td class="td">48 meses</td>
+    </tr>
+    <tr>
+      <td><img src="https://s3.sa-east-1.amazonaws.com/revista.mobiauto/Volkswagen/Plano+investimentos+R%24+7+bilh%C3%B5es/VW+Tarok+VW277+ou+VW317+proje%C3%A7%C3%A3o+dianteira.jpg" class="imagem"></td>
+      <td class="td">R$ 150.000,00</td>
+        <td class="td">48 meses</td>
+    </tr>
+</table>
+
+<h1 class="title">Nome do carro</h1>
+<input type="text" name="valor" id="nome">
+<input type="submit" name="" onclick="chamar()">
+
+
+
+<h1 class="title">Valor bruto do carro</h1>
+<input type="text" name="valor2" id="valor">
+<input type="submit" name="" onclick="chamar2()">
+
+<h1 class="title">Nº de parcelas desejadas</h1>
+<input type="text" name="valor" id="parcela">
+<input type="submit" name="" onclick="chamar3()">
+
+<button onclick="calcular()" class="button"> calcular</button>
+
+
+<table width="657" border="1px" class="table2">
+    <tr>
+      <td width="141" height="40"><h1 class="nome">Nome do carro</h1>
+      </td>
+      <td width="163"><h1 class="valor">O valor bruto do carro: R$</h1>
+      </td>
+      <td width="150"><h1 class="parcelas">Total de parcelas:</h1>
+      </td>
+      <td width="193"><h1 class="valor">O valor do carro com juros: R$</h1>
+      </td>
+      <td width="193"><h1 class="valor">O valor mensal a pagar: R$</h1>
+      </td>
+    </tr>
+    <tr>
+      <td height="40"><h1 id="nomecarro" class="resposta"> 
+    </h1></td>
+      <td><h1 id="valorbruto" class="resposta"> 
+    </h1></td>
+      <td><h1 id="qtdeparcelas" class="resposta"> 
+    </h1></td>
+    <td><h1 id="final" class="resposta">
+    </h1></td>
+    <td><h1 id="mensal" class="resposta"> 
+    </h1></td>
+    </tr>
+  </table>
+<script src="calculadora.js"> </script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0">
+    <link rel="stylesheet" href="calculadora.css" type="text/css">
+
+    <title>Document</title>
+</head>
+<body>
+
+<center>
+    <h1 style="color: black;">CALCULADORA DE ÍNDICE DE MASSA CORPORAL</h1>
+</center>
+
+<table border="1"class="table" width="500">
+    <tr>
+        <td class="td" width="120">IMC</td>
+        <td class="td" width="160">CLASSIFICAÇÃO</td>
+        <td class="td" width="130">OBESIDADE (GRAU)</td>
+    </tr>
+    <tr>
+        <td class="td">MENOR QUE 18,5</td>
+        <td class="td">MAGREZA</td>
+        <td class="td">0</td>
+    </tr>
+    <tr>
+      <td class="td">ENTRE 18,5 E 24,9</td>
+      <td class="td">NORMAL</td>
+      <td class="td">0</td>
+    </tr>
+    <tr>
+      <td class="td">ENTRE 25,0 E 29,9</td>
+      <td class="td">SOBREPESO</td>
+      <td class="td">I</td>
+    </tr>
+    <tr>
+      <td class="td">ENTRE 30,0 E 39,9</td>
+      <td class="td">OBESIDADE</td>
+      <td class="td">II</td>
+    </tr>
+    <tr>
+      <td class="td">MAIOR QUE 40,0</td>
+      <td class="td">OBESIDADE GRAVE</td>
+      <td class="td">III</td>
+    </tr>
+    
+</table>
+
+<h1 class="title">Peso (EM QUILOGRAMAS)</h1>
+<input type="text" name="valor" id="peso">
+<input type="submit" name="" onclick="chamar4()">
+
+
+
+<h1 class="title">Altura (em metros)</h1>
+<input type="text" name="valor2" id="altura">
+<input type="submit" name="" onclick="chamar5()">
+
+<button onclick="calcular()" class="button"> calcular</button>
+
+
+<table width="657" border="1px" class="table2">
+    <tr>
+      <td width="141" height="40"><h1 class="nome">Peso</h1>
+      </td>
+      <td width="163"><h1 class="valor">Altura</h1>
+      </td>
+      <td width="193"><h1 class="valor">IMC</h1>
+      </td>
+      <td width="193"><h1 class="valor">CLASSIFICAÇÃO</h1>
+      </td>
+      <td width="193"><h1 class="valor">OBESIDADE (GRAU)</h1>
+      </td>
+    </tr>
+    <tr>
+        <td height="40"><h1 id="valorPeso" class="resposta"> 
+      </h1></td>
+        <td><h1 id="valorAltura" class="resposta"> 
+      </h1></td>
+        <td><h1 id="imc" class="resposta"> 
+      </h1></td>
+      <td><h1 id="classificacao" class="resposta">
+      </h1></td>
+      <td><h1 id="obesidade" class="resposta"> 
+      </h1></td>
+      </tr>
+  </table>
+<script src="calculadora.js"> </script>
+
+</body>
+</html>
